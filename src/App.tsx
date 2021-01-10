@@ -30,7 +30,6 @@ function App() {
 		}
 
 		if (currentQuestion === quiz.length - 1) {
-			console.log("quiz completed, your score is " + score);
 			setCurrentQuestion(0);
 			setScore(0);
 			setShowResult(true);
