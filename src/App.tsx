@@ -40,7 +40,7 @@ function App() {
 	};
 
 	if (!quiz.length) {
-		return <h4>Loading ...</h4>;
+		return <h4 className="loading">Loading ...</h4>;
 	}
 
 	if (!showQuiz) {

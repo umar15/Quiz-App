@@ -1,10 +1,10 @@
 * {
 	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-	background-color: #efefef;
+	background-color: #c9cac7;
 }
 
 .btn {
-	padding: 5px 10px;
+	padding: 5px 15px;
 	font-size: 15px;
 	background-color: #022f55;
 	color: #fff;
@@ -20,7 +20,7 @@
 }
 
 .header {
-	background-color: #fff;
+	background-color: #efefef;
 	padding: 10px 20px;
 	box-shadow: 0 0 10px #949494;
 	color: #022f55;
@@ -30,10 +30,16 @@
 .question {
 	padding: 5px;
 	margin: 5px 20px;
+	width: 400px;
+}
+@media screen and (max-width: 500px) {
+	.question {
+		width: 90%;
+	}
 }
 
 .option {
-	background-color: #fff;
+	background-color: #efefef;
 	padding: 5px;
 	margin: 5px 20px;
 	border-radius: 5px;
@@ -41,13 +47,15 @@
 }
 
 .option-label {
-	background-color: #fff;
+	background-color: #efefef;
 }
 
 .radio {
 	margin-right: 10px;
 }
 
-/* .btn-submit {
-	margin: auto;
-} */
+.loading {
+	margin-top: 20px;
+	font-size: 30px;
+	text-align: center;
+}
