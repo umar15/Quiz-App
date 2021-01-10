@@ -45,9 +45,10 @@ function App() {
 
 	if (!showQuiz) {
 		return (
-			<div>
-				<h1>Quiz App</h1>
+			<div className="quiz-app">
+				<h1 className="header">Quiz App</h1>
 				<button
+					className="btn"
 					onClick={() => {
 						setShowQuiz(true);
 						setShowResult(false);
@@ -61,9 +62,11 @@ function App() {
 
 	if (showResult) {
 		return (
-			<div>
+			<div className="quiz-app">
+				<h1 className="header">Quiz App</h1>
 				<h3>Your Score: {score}</h3>
 				<button
+					className="btn"
 					onClick={() => {
 						setShowResult(false);
 						setShowQuiz(false);
@@ -76,8 +79,8 @@ function App() {
 	}
 
 	return (
-		<div>
-			<h1>Quiz App</h1>
+		<div className="quiz-app">
+			<h1 className="header">Quiz App</h1>
 			<Question
 				question={quiz[currentQuestion].question}
 				options={quiz[currentQuestion].options}
