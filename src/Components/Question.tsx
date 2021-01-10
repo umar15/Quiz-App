@@ -3,6 +3,7 @@ import { Question_Props_Type } from '../Types/Quiz_Types';
 
 const Question: React.FC<Question_Props_Type> = ({question, options, callback}) => {
    const [answer, setAnswer] = useState("")
+   
    return (
       <div>
          <div>
@@ -17,6 +18,7 @@ const Question: React.FC<Question_Props_Type> = ({question, options, callback}) 
                            type="radio"
                            required
                            value={option}
+                           checked={answer===option}
                            onChange={(e: any) => setAnswer(e.target.value)}
 
                         />
